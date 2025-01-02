@@ -14,16 +14,17 @@ const App = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen mx-auto max-w-7xl">
-      <div className="text-center">
+    <div>
+      <div >
         <h1>Counter with Redux</h1>
-        <button onClick={handleIncrement} className="bg-orange-500 hover:bg-gray-300 p-3 rounded-lg">
+        <Button onClick={handleIncrement}>
+          Button
           Increment
-        </button>
+        </Button>
         <p>0</p>
-        <button onClick={handleDecrement} className="bg-orange-500 hover:bg-gray-300 p-3 rounded-lg">
+        <Button onClick={handleDecrement}>
           Decrement
-        </button>
+        </Button>
       </div>
     </div>
   );
