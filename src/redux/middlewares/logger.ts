@@ -1,6 +1,10 @@
 const logger = (state) => (next) => (action) => {
-    console.log(state.getState());
-    console.log(action);
+    console.info(state.getState());
+    console.group(action.type);
+    const result = next(action);
+    console.info('next state', state.getState());
+    console.groupEnd()
+    return result
 }
 
 
